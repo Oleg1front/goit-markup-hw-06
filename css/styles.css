@@ -855,6 +855,7 @@ header {
   .portfolio-list {
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
   }
   .portfolio-list-item {
     flex-basis: calc((100% - 24px) / 2);
@@ -875,6 +876,9 @@ header {
     flex-wrap: wrap;
     padding-left: 108px;
   }
+  .subscribe-text {
+    padding-top: 72px;
+  }
   .logo-container {
     margin-right: 24px;
   }
@@ -884,4 +888,63 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  /* 2nd section */
+  .features {
+    flex-direction: column;
+    text-align: center;
+    gap: 72px;
+  }
+  .feature-type {
+    color: var(--NAVY-BLUE, #2e2f42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .feature-text {
+    font-weight: 500;
+  }
+
+  /* 3rd section */
+  .team-list {
+    flex-direction: column;
+  }
+  .team-card {
+    width: 100%;
+  }
+
+  /* 4th section */
+  .portfolio-list {
+    flex-direction: column;
+  }
+  .portfolio-list-item {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-container {
+    padding-left: 16px;
+    gap: 72px;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-text {
+    padding-top: 0px;
+  }
+  .subscribe-button {
+    text-align: center;
+  }
+  .social-media-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-button {
+    max-width: 165px;
+  }
 }
