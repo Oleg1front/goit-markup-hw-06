@@ -947,4 +947,67 @@ header {
   .subscribe-button {
     max-width: 165px;
   }
+
+  .navigation {
+    display: none;
+  }
+  .address-list {
+    display: none;
+  }
+  /* Modal nav */
+  .modal-nav-container {
+    position: relative;
+    height: 100vh;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    margin-left: 16px;
+    margin-bottom: 168px;
+    padding-top: 72px;
+  }
+  .address-link {
+    color: var(--SLATE, #434455);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.4px;
+    width: 100%;
+    height: auto;
+  }
+  .nav-link {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    padding: 0;
+    padding-top: 24px;
+  }
+  .nav-link-current {
+    color: var(--OCEAN, #404bbf);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    padding: 0;
+  }
+  .address-list-modal {
+    max-width: 768px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+  }
+  .nav-link-current::after {
+    display: none;
+  }
+  .modal-nav-media-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 24px;
+  }
 }
