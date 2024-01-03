@@ -799,9 +799,9 @@ header {
 }
 .header-burger-icon {
   fill: black;
-  margin-top: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 .modal-nav-buttons {
   .nav-buttons {
@@ -1037,10 +1037,19 @@ header {
   .nav-link-current::after {
     display: none;
   }
+  .navigation {
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    margin-right: 97px;
+  }
   .modal-nav-media-list {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     gap: 24px;
+  }
+  .modal-window {
+    min-width: 288px;
+    width: 288px;
   }
 }
