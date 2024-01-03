@@ -947,6 +947,7 @@ header {
   }
   .team-card {
     width: 100%;
+    margin: 0 auto;
   }
 
   /* 4th section */
@@ -955,6 +956,7 @@ header {
   }
   .portfolio-list-item {
     width: 100%;
+    margin: 0 auto;
   }
 
   /* footer */
@@ -962,12 +964,29 @@ header {
     padding-left: 16px;
     gap: 72px;
   }
+  .link-footer {
+    margin: 16px 102px;
+    display: flex;
+  }
+  .logo-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .subscribe-form {
     flex-direction: column;
     align-items: center;
   }
   .subscribe-text {
     padding-top: 0px;
+    text-align: center;
   }
   .subscribe-button {
     text-align: center;
