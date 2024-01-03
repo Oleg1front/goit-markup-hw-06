@@ -796,6 +796,8 @@ header {
 
 .modal-nav-container {
   position: relative;
+  visibility: hidden;
+  display: none;
 }
 .header-burger-icon {
   fill: black;
@@ -973,6 +975,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .subscribe-container {
     margin: 0 auto;
@@ -1010,6 +1013,15 @@ header {
   .modal-nav-container {
     position: relative;
     height: 100vh;
+    width: 100%;
+  }
+  .is-open {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
   }
 
   .modal-nav-buttons {
