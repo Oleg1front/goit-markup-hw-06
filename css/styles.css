@@ -794,6 +794,32 @@ header {
   margin-right: auto;
 }
 
+.modal-nav-container {
+  position: relative;
+}
+.header-burger-icon {
+  fill: black;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.modal-nav-buttons {
+  .nav-buttons {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+  }
+}
 @media screen and (max-width: 1158px) {
   /* header */
   .navigation {
@@ -887,12 +913,20 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-burger-icon {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   /* 2nd section */
   .features {
     flex-direction: column;
     text-align: center;
     gap: 72px;
+  }
+  .container-header {
+    justify-content: flex-start;
   }
   .feature-type {
     color: var(--NAVY-BLUE, #2e2f42);
@@ -947,8 +981,7 @@ header {
   .subscribe-button {
     max-width: 165px;
   }
-
-  .navigation {
+  .nav-buttons {
     display: none;
   }
   .address-list {
@@ -960,7 +993,7 @@ header {
     height: 100vh;
   }
 
-  .nav-buttons {
+  .modal-nav-buttons {
     flex-direction: column;
     align-items: flex-start;
     gap: 0px;
