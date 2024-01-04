@@ -9,6 +9,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 body {
   color: #434455;
@@ -852,6 +853,12 @@ header {
   /* section hero */
   .section-solutions {
     padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero2x-min.jpg);
   }
 
   /* 2nd section */
@@ -1110,6 +1117,14 @@ header {
     min-width: 288px;
     width: 288px;
     top: 50%;
+  }
+  .section-solutions {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero2xMobile-min.jpg);
   }
 }
 
