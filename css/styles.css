@@ -855,6 +855,21 @@ header {
   }
 
   /* 2nd section */
+  .feature-type {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .feature-text {
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.32px;
+  }
   .features-background {
     display: none;
   }
@@ -884,6 +899,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    row-gap: 72px;
   }
   .portfolio-list-item {
     flex-basis: calc((100% - 24px) / 2);
@@ -921,12 +937,23 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
+  .solutions {
+    color: var(--WHITE, #fff);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
   /* 2nd section */
   .features {
     flex-direction: column;
     text-align: center;
     gap: 72px;
   }
+
   .container-header {
     justify-content: flex-start;
   }
@@ -941,11 +968,13 @@ header {
   }
   .feature-text {
     font-weight: 500;
+    text-align: start;
   }
 
   /* 3rd section */
   .team-list {
     flex-direction: column;
+    gap: 72px;
   }
   .team-card {
     width: 100%;
@@ -1014,13 +1043,14 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
+    padding: 72px 24px 40px 16px;
   }
   .is-open {
     visibility: visible;
     display: block;
     opacity: 1;
     background-color: #ffffff;
-    position: absolute;
+    position: fixed;
     top: 0;
   }
 
@@ -1028,9 +1058,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0px;
-    margin-left: 16px;
     margin-bottom: 168px;
-    padding-top: 72px;
   }
   .address-link {
     color: var(--SLATE, #434455);
@@ -1062,8 +1090,7 @@ header {
   }
   .address-list-modal {
     max-width: 768px;
-    padding-bottom: 48px;
-    padding-left: 16px;
+    margin-bottom: 48px;
   }
   .nav-link-current::after {
     display: none;
@@ -1082,5 +1109,17 @@ header {
   .modal-window {
     min-width: 288px;
     width: 288px;
+    top: 50%;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .section-solutions {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero2x-min.jpg);
   }
 }
