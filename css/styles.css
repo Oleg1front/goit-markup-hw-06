@@ -794,7 +794,9 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
+.modal-close-btn {
+  cursor: pointer;
+}
 .modal-nav-container {
   position: relative;
   visibility: hidden;
