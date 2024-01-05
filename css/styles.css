@@ -161,6 +161,16 @@ header {
   color: #404bbf;
 }
 
+.burger-btn {
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
 /* Section 1 with button */
 .section-solutions {
   background-color: #2e2f42;
@@ -597,6 +607,7 @@ header {
 /* Modal container */
 .modal-container {
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -804,7 +815,6 @@ header {
 }
 .header-burger-icon {
   fill: black;
-  position: absolute;
   top: 16px;
   right: 16px;
 }
@@ -1056,7 +1066,7 @@ header {
   }
   .is-open {
     visibility: visible;
-    display: block;
+    display: none;
     opacity: 1;
     background-color: #ffffff;
     position: fixed;

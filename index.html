@@ -53,9 +53,11 @@
           </ul>
         </address>
       </div>
-      <svg class="header-burger-icon" width="24" height="24" fill="none">
-        <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
-      </svg>
+      <button id="burger-btn" type="button" class="burger-btn">
+        <svg class="header-burger-icon" width="24" height="24" fill="none">
+          <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+        </svg>
+      </button>
     </header>
 
     <!-- Main content -->
@@ -65,7 +67,9 @@
       <section class="section-solutions">
         <div class="container">
           <h1 class="solutions">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button id="order-btn" type="button" class="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -666,9 +670,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container">
-      <div class="modal-window">
-        <button class="modal-close-btn" type="button">
+    <div id="modal-container" class="modal-container">
+      <div id="modal-window" class="modal-window">
+        <button id="modal-close-btn" class="modal-close-btn" type="button">
           <svg class="close-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -749,8 +753,8 @@
         </form>
       </div>
     </div>
-    <div class="modal-nav-container is-open">
-      <button class="modal-close-btn" type="button">
+    <div id="modal-nav" class="modal-nav-container is-open">
+      <button id="modal-nav-close-btn" class="modal-close-btn" type="button">
         <svg class="close-button" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
@@ -833,5 +837,6 @@
         </li>
       </ul>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
